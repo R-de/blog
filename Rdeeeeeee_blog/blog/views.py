@@ -41,4 +41,8 @@ def tag(request, pk):
 	post_list = Post.objects.filter(tags=t).order_by('-created_time')
 	return render(request, 'blog/index.html', context={'post_list': post_list})
 
+def about(request):
+	return render(request, 'blog/about.html')
 
+def contact(request):
+	return render(request, 'blog/contact.html')

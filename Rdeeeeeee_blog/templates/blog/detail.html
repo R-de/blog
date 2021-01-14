@@ -10,10 +10,25 @@
 
 {% block main %}
   <article class="post post-{{ post.pk }}">
+
+
     <div class="container">
       <div class="row">
+        {% block toc %}
+          {% if post.toc %}
+            <div class="col-lg-4 col-md-5 mx-auto">
+              <h3 class="widget-title">文章目录</h3>
+              <div class="toc">
+                <ul>
+                  {{ post.toc|safe }}
+                </ul>
+              </div>
+            </div>
+          {% endif %}
+        {% endblock toc %}
+
         <div class="col-lg-8 col-md-10 mx-auto">
-          {{ post.body }}
+          {{ post.body|safe }}
         </div>
       </div>
     </div>

@@ -25,7 +25,7 @@ SECRET_KEY = '=52y)w@c9*cb-4n_2fzg@$&l465n0l$tkql@loqy*kz_n%0$p('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost ', '.zju.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost ', 'renchaodu.space']
 
 
 # Application definition
